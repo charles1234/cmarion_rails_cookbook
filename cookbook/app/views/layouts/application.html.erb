@@ -13,6 +13,11 @@
         <h1>Our Cookbook</h1>
       </header>
       <section class="content">
+        <nav>
+         <%=link_to 'Home', controller: 'home', action: 'index' %>
+         <%=link_to 'About', controller: 'home', action: 'about' %>
+        </nav>
+        
         <%= yield %>
       </section>
       <footer>
