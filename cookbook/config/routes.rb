@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  resources :recipes
+  root controller: 'home', action: 'index'
 
-  get 'home/about'
+  get "/about", controller: 'home', action: 'about', as: 'about'
 
-  get 'home/contact'
+  get "/contact", controller: 'home', action: 'contact', as: 'contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
