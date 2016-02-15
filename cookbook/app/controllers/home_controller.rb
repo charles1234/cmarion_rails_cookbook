@@ -1,11 +1,9 @@
 class HomeController < ApplicationController
   def index
-    @number_of_recipes = 5
+    @number_of_recipes = Recipe.count
   end
-
-  def about
+  def recipe
   end
-
   def contact
   end
 end
