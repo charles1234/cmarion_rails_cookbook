@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get "/about", controller: "home", action: "about", as: "about"
 
   get "/contact", controller: "home", action: "contact", as: "contact"
+  
+  get "/admin", controller: "index", action: "index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

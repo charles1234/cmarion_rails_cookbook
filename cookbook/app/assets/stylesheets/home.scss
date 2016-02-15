@@ -1,3 +1,16 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$mainColor: #999;
+
+header, footer {
+  background-color: $mainColor;
+}
+
+.wrapper {
+  border: 1px solid $mainColor;
+}
+
+$width: 960px;
+
