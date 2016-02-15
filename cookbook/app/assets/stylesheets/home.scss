@@ -14,3 +14,13 @@ header, footer {
 
 $width: 960px;
 
+.wrapper {
+  width: $width;
+}
+
+.content {
+  width: $width * 0.75;
+}
+
+
+
